@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url(../img-cm.png);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+menu {
+    width: 64px;
+    height: 64px;
+
+    img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+menu:hover {
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes logo {
+    0% {
+        transform: rotate(0deg);
+        filter: drop-shadow(0px 0px 0px white);
+    }
+
+    25% {
+        filter: drop-shadow(0px 0px 12px white);
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 0px white);
+    }
+
+    75% {
+        filter: drop-shadow(0px 0px 12px white);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        filter: drop-shadow(0px 0px 0px white);
+    }
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.ironman {
+    width: 35%;
+    filter: drop-shadow(0px 0px 16px #fafafa40);
+
+    img {
+        width: 100%;
+    }
+}
+
+.ironman img {
+    height: 100%;
+}
+
+.about {
+    width: 25%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fafafa;
+}
+
+
+.logo-marvel {
+    width: 142px;
+    height: 32px;
+}
+
+.logo-marvel img {
+    width: 100%;
+}
+
+a.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 48px;
+    background-image: linear-gradient(#ffbb40, #f3cb80);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    transition: .5s ease-in;
+    filter: brightness(50%);
+}
+
+a.btn:hover {
+    filter: brightness(100%);
+    box-shadow: 0px 0px 8px #f3cb80;
+}
